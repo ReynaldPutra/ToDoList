@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fafaf9;
+  font-family: "inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.App {
+  width: 800px;
+  margin: auto;
+}
+
+.header {
+  font-weight: 700;
+}
+
+.Todo {
+  margin-top: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 8px 16px !important;
+  border: none !important;
+}
+
+.btn-primary {
+  background-color: #075985 !important;
+}
+
+.btn-secondary {
+  background-color: #fafaf9 !important;
+  border-color: #fafaf9 !important;
+  color: #0369a1 !important;
+}
+
+.btn-danger {
+  background-color: #fafaf9 !important;
+  border-color: #fafaf9 !important;
+  color: #be123c !important;
+}
+
+.TodoForm {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control {
+  width: 600px !important;
+  background-color: #fafaf9 !important;
+  border: none !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #d6d3d1 !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 16px !important;
+}
+
+li {
+  margin-bottom: 20px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 10px 16px !important;
+  border-radius: 8px !important;
+}
+
+.iconCheck {
+  opacity: 0.1;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.list-item span {
+  max-width: 620px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.iconDelete {
+  color: #be123c;
+  width: 20px;
+  height: 20px;
+}
+
+.deleteButton {
+  margin-left: auto;
+}
+
+.err {
+  color: #be123c;
+  font-size: 12px;
+  padding: 0 12px;
+}
+
+.empty {
+  text-align: center;
+  padding: 36px;
+}
+
+.modal-body,
+.modal-footer {
+  text-align: center;
+}
+
+.modal-dialog,
+.modal-content {
+  width: 300px !important;
+  border-radius: 12px !important;
+  top: 30%;
+}
+
+.modal-body {
+  border-radius: 12px 12px 0px 0px;
+  background-color: white !important;
+  font-size: 14px;
+  padding: 40px 10px !important;
+  font-weight: 500;
+}
+
+.modal-footer {
+  background-color: #fafaf9 !important;
+  border: none !important;
+}
+
+.btnModal {
+  margin: auto !important;
+}
+
+.btn-cancel {
+  background-color: #fafaf9 !important;
+  width: 128px;
+}
+
+.btn-confirm {
+  background-color: #9f1239 !important;
+  color: white !important;
+  width: 128px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.checked {
+  color: green; /* example style */
+  opacity: 1;
+}
+
+.checkedList {
+  opacity: 0.5;
+}
