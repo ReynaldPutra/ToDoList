@@ -22,6 +22,8 @@ const TodoListHead: React.FC<Props> = ({ addTask, clearTask }) => {
     } else {
       setErrorVisible(false);
       addTask(taskName);
+      setformVisible(false);
+      setaddVisible(true);
       setTaskName("");
     }
   };
@@ -34,6 +36,13 @@ const TodoListHead: React.FC<Props> = ({ addTask, clearTask }) => {
   };
   const closeModal = () => {
     setShowModal(false);
+  };
+
+  const cancelCreate = () => {
+    setformVisible(false);
+    setaddVisible(true);
+    setErrorVisible(false);
+    setTaskName("");
   };
 
   return (
@@ -62,7 +71,7 @@ const TodoListHead: React.FC<Props> = ({ addTask, clearTask }) => {
         <form className="TodoForm" onSubmit={addTodo}>
           <input
             type="text"
-            className="form-control"
+            className="form-control input-text"
             placeholder="Add new to-do title..."
             value={taskName}
             onChange={(e) => setTaskName(e.target.value)}
@@ -71,10 +80,7 @@ const TodoListHead: React.FC<Props> = ({ addTask, clearTask }) => {
             <button
               type="button"
               className="btn btn-secondary me-2"
-              onClick={() => {
-                setformVisible(false);
-                setaddVisible(true);
-              }}
+              onClick={cancelCreate}
             >
               Cancel
             </button>
